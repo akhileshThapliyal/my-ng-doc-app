@@ -11,10 +11,19 @@
 <div class="square">
     <p>{{ title }}</p>
     <p>{{ description }}</p>
-    `{{keyword_link}}`
 </div>
+`{{keyword_link}}`
 {% endmacro %}
 
-{{ createBoxWithLink('Ng Doc', 'NgDoc is a library for creating documentation for your Angular projects, it is injected into the build process of a regular Angular application and creates documentation that can be displayed in it.', '*CustomAngularComponentPage') }}
+{{ createBoxWithLink('Ng Doc Box with link', 'NgDoc is a library for creating documentation for your Angular projects, it is injected into the build process of a regular Angular application and creates documentation that can be displayed in it.', '*CustomAngularComponentPage') }}
 
+{% macro createClicklableBoxTile(title, description, keyword_link) %}
+<a href="`{{keyword_link}}`">
+    <div class="square-clickable">
+        <p>{{ title }}</p>
+        <p>{{ description }}</p>
+    </div>
+</a>
+{% endmacro %}
 
+{{ createClicklableBoxTile('Ng Doc clicklable box tile', 'NgDoc is a library for creating documentation for your Angular projects, it is injected into the build process of a regular Angular application and creates documentation that can be displayed in it.', '*CustomAngularComponentPage') }}
