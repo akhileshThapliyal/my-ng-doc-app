@@ -2,6 +2,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@ng-doc/generated": [
+        "./ng-doc/my-ng-doc-app/index.ts"
+      ],
+      "@ng-doc/generated/*": [
+        "./ng-doc/my-ng-doc-app/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
