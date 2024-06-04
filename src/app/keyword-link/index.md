@@ -11,10 +11,10 @@
 <div class="square">
     <p>{{ title }}</p>
     <p>{{ description }}</p>
-    <a href="{{keyword_link}}">Macros Custom Link</a>
+    `{{keyword_link}}`
 </div>
 {% endmacro %}
 
-{{ createBoxWithLink('Ng Doc', 'NgDoc is a library for creating documentation for your Angular projects, it is injected into the build process of a regular Angular application and creates documentation that can be displayed in it.', `*CustomAngularComponentPage`) }}
+{{ createBoxWithLink('Ng Doc', 'NgDoc is a library for creating documentation for your Angular projects, it is injected into the build process of a regular Angular application and creates documentation that can be displayed in it.', '*CustomAngularComponentPage') }}
 
 
