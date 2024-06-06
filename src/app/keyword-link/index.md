@@ -12,7 +12,8 @@
     <p>{{ title }}</p>
     <p>{{ description }}</p>
 </div>
-`{{keyword_link}}`
+
+`{{ keyword_link }}`
 {% endmacro %}
 
 {{ createBoxWithLink('Ng Doc Box with link', 'NgDoc is a library for creating documentation for your Angular projects, it is injected into the build process of a regular Angular application and creates documentation that can be displayed in it.', '*CustomAngularComponentPage') }}
