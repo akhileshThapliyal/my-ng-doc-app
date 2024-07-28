@@ -15,3 +15,6 @@ It's time to write some awesome docs!
 {{ NgDocActions.playground("TagPlayground") }}
 
 {{ NgDocActions.playground("ButtonPlayground") }}
+
+
+<a href="mailto:test@test.com">Customer Support</a>
